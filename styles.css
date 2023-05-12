@@ -1,0 +1,51 @@
+#page-name {
+    font-family: 'Unispace', sans-serif;
+    color: rgb(94, 143, 229);
+    text-align: center;
+    text-decoration: underline;
+}
+
+body {
+    background-color:rgb(27, 49, 86);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.sidebar button {
+    padding: 20px 20px;
+    height: 40px;
+    width: 90px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(94, 143, 229);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.sidebar button:first-child {
+    margin-top: 20px;
+}
+
+.sidebar button:hover {
+    background-color: rgb(68, 105, 180);
+}
+
+.sidebar a {
+    text-decoration: none;
+}
