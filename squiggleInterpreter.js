@@ -1,3 +1,4 @@
+const code = editor.value;
 function interpretSquiggle(code) {
     const validChars = "~+-/* ";
     const error = "Error";
@@ -39,7 +40,6 @@ addEventListener("load", () => {
 });
 
 function run() {
-    const code = editor.value;
     let result = interpretSquiggle(code);
     console.value = result;
 }
