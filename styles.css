@@ -1,32 +1,106 @@
 #page-name {
     font-family: 'Unispace', sans-serif;
+    font-size: 1.9vh;
     color: rgb(94, 143, 229);
     text-align: center;
     text-decoration: underline;
 }
 
-body {
-    background-color:rgb(27, 49, 86);
+#page-sub-name {
+    font-family: 'Unispace', sans-serif;
+    font-size: 1.2vh;
+    color: rgb(94, 143, 229);
+    text-align: center;
+    text-decoration: underline;
 }
 
-.sidebar {
+#text {
+    font-family: sans-serif;
+    font-size: 1.5vh;
+    line-height: 1.5;
+    color: rgb(94, 143, 229);
+    text-align: justify;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgb(94, 143, 229);
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgb(94, 143, 229);
+}
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgb(94, 143, 229);
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgb(94, 143, 229);
+}
+
+a:link {
+    color: rgb(255, 255, 255); /* Change the color to your desired value */
+    text-decoration: none; /* Remove the underline */
+}
+
+body {
+    background-color:rgb(24, 39, 65);
+    user-select: none;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.sidebar{
     position: fixed;
     top: 0;
-    right: 0;
-    height: 100%;
-    width: 100px;
+    left: 0;
+    height: 100vh;
+    width: 11.11vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-right: 10px;
+    padding-left: 1vh; 
 }
 
-.sidebar button {
-    padding: 20px 20px;
-    height: 40px;
-    width: 90px;
-    font-size: 16px;
+.right-sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 11.11vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 1vh;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.right-sidebar a {
+    text-decoration: none;
+}
+
+button {
+    padding: 2.2vh;
+    margin-top: 2vh;
+    height: 2vh;
+    width: 10vh;
+    font-size: 1.7vh;
     font-weight: bold;
     border: none;
     background-color: rgb(94, 143, 229);
@@ -36,16 +110,60 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    user-select: auto;
 }
 
-.sidebar button:first-child {
-    margin-top: 20px;
+button:first-child {
+    margin-top: 2vh;
 }
 
-.sidebar button:hover {
+button:hover {
     background-color: rgb(68, 105, 180);
 }
 
-.sidebar a {
-    text-decoration: none;
+button:disabled {
+    background-color: rgb(68, 105, 180);
+    color: rgb(204, 204, 204);
+    cursor: not-allowed;
 }
+
+.textfield {
+    background-color: rgb(36, 66, 117);
+    color: rgb(255, 255, 255);
+    border: 0.44vh solid rgb(94, 143, 229);
+    padding: 1.11vh;
+    font-family: 'Unispace', sans-serif;
+    font-size: 1.3vh;
+    height: 30vh;
+    width: 60vw;
+    margin: 4% auto 0;
+    user-select: auto;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .textfield {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .textfield {
+        width: 90vw;
+    }
+}
+
+.textfield:not([contenteditable="true"]) {
+    background-color: rgb(29, 55, 100);
+    color: white;
+}
+
+.link {
+    display: inline-block;
+    margin-left: 5px;
+    color: rgb(224, 236, 248); 
+    
+}  

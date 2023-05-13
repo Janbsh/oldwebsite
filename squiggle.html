@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Janbsh's Site - Squiggle Interpreter</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <div id="page-name">
+    <h1>Squiggle Interpreter</h1>
+  </div>
+  <div class="sidebar">
+    <button onclick="run()">Run</button>
+    <button onclick="clearAll()">Clear</button>
+  </div>
+  <div class="right-sidebar">
+    <a href="index.html"><button>Home</button></a>
+    <a href="projects.html"><button>Projects</button></a>
+    <a href="esolangs.html"><button>Esolangs</button></a>
+  </div>
+  <div class="textfield" contenteditable="true" id="editor" placeholder="Input:"></div>
+  <div class="textfield" contenteditable="false" id="console" placeholder="Output:"></div>
+  <script src="squiggleInterpreter.js"></script>
+</body>
+</html>

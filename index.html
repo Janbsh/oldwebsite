@@ -5,10 +5,17 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="sidebar">
-      <a href="index.html"><button>Home</button></a>
+    <div class="right-sidebar">
+      <a href="index.html"><button disabled>Home</button></a>
       <a href="projects.html"><button>Projects</button></a>
+      <a href="esolangs.html"><button>Esolangs</button></a>
     </div>    
-    <h1 id="page-name">Home</h1>
+    <div id="page-name"><h1>Home</h1></div>
+    <h1 id="text">Welcome to my website! Use the buttons on the right side of the screen to navigate the main pages. Here, you'll find some of my personal projects and other things I'm working on. I hope you'll find something interesting or useful while your here. While I made this website mostly for myself, I'm happy to share it with anyone who might enjoy it. Thanks for taking the time visit this page.</h1>
+    <h1 id="text">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h1>
+    <script> 
+      const button = document.getElementById("disabled")
+      button.disabled = true;
+    </script>
   </body>
 </html>
