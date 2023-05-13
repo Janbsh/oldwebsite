@@ -1,9 +1,12 @@
 function interpretSquiggle(code) {
-    const validChars = "~+-/*";
+    const validChars = "~+-/* ";
     const error = "Error";
     let tb = 0;
     let ob = 0;
     let op;
+    if(typeof code !== "string" && !Array.isArray(code)){
+        return "Error: code is not a string or iterable object";
+    }    
     for(const c of code){
         if(c === '~') tb ++;
         else if("+-/*".indexOf(c) > -1) {
