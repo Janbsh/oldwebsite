@@ -1,4 +1,24 @@
-const code = editor.value;
+var runButton;
+var editor;
+var console;
+
+addEventListener("load", () => {
+    runButton = document.getElementById("run-button");
+    editor = document.getElementById("editor");
+    console = document.getElementById("console");
+});
+
+function run() {
+    const code = editor.value;
+    let result = interpretSquiggle(code);
+    console.value = result;
+}
+
+function clearAll() {
+    editor.value = "";
+    console.value = "";
+}
+
 function interpretSquiggle(code) {
     const validChars = "~+-/* ";
     const error = "Error";
@@ -27,24 +47,4 @@ function interpretSquiggle(code) {
     else ob = tb;
     if (!code.split('').every(c => validChars.includes(c))) return error;
     else return ob;
-}
-
-var runButton;
-var editor;
-var console;
-
-addEventListener("load", () => {
-    runButton = document.getElementById("run-button");
-    editor = document.getElementById("editor");
-    console = document.getElementById("console");
-});
-
-function run() {
-    let result = interpretSquiggle(code);
-    console.value = result;
-}
-
-function clearAll() {
-    editor.value = "";
-    console.value = "";
 }
