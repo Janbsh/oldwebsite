@@ -18,8 +18,10 @@
     <a href="projects.html"><button>Projects</button></a>
     <a href="esolangs.html"><button>Esolangs</button></a>
   </div>
-  <div class="textfield" contenteditable="true" id="editor" placeholder="Input:"></div>
-  <div class="textfield" contenteditable="false" id="console" placeholder="Output:"></div>
+  <div>
+    <textarea class="textfield" contenteditable="true" id="editor" placeholder="Input:" style="resize: none;"></textarea>
+    <textarea class="textfield" readonly id="console" placeholder="Output:" style="resize: none;"></textarea> 
+  </div>
   <script src="squiggleInterpreter.js"></script>
 </body>
 </html>
